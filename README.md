@@ -16,11 +16,15 @@ O sistema reconhece rostos em tempo real via webcam comparando-os com imagens de
 
 ## 📂 Estrutura do Projeto
 
-├── referencias/ # Pasta com imagens de referência (ex.: Joao.jpg, Maria.jpg)
-
-├── reconhecimento.py # Código principal da aplicação
-
-└── README.md # Documentação do projeto
+```
+Sprint3-IoT/
+├── .idea/
+├── referencias/
+│   └── JoaoVieira.jpg               # Foto para a referencia de rosto conhecido
+├── main.py                   
+├── README.md                    
+└── Sprint3_Iot ‐ Feito com o Clipchamp.MP4
+```
 
 ---
 
@@ -37,7 +41,7 @@ O sistema reconhece rostos em tempo real via webcam comparando-os com imagens de
    ````bash
    pip install opencv-python face_recognition numpy
 
-4. Adicione imagens de referência na pasta **referencias/**
+4. Adicione imagens de referência na pasta `referencias/`
  
   - Use nomes de arquivos repretando a pessoa (ex.: **Joao.jpg**)
 
@@ -52,14 +56,16 @@ O sistema reconhece rostos em tempo real via webcam comparando-os com imagens de
 
 ## 🔧 Parâmetros Relevantes
 
-- **tolerance=0.6** → Define o nível de similaridade aceito (menor = mais rigoroso).
-- Redimensionamento **fx=0.25, fy0.25** → Acelera processamento em tempo real.
+- `tolerance=0.6` → Define o nível de similaridade aceito (menor = mais rigoroso).
+- Redimensionamento `fx=0.25, fy0.25` → Acelera processamento em tempo real.
 
 ---
 
 ## 📹 Demonstração
 
+Segue abaixo o link do vídeo explicativo, caso haja algum problema em acessar, o mesmo se encontra na raiz do projeto.
 
+[Vídeo explicativo](https://drive.google.com/file/d/1LHjaw35CsMCHOsdAPWHBmZPNgyQTnSMx/view?usp=sharing)
 
 ---
 
@@ -69,6 +75,13 @@ O sistema reconhece rostos em tempo real via webcam comparando-os com imagens de
 - Pode falhar devido a iluminação ou ângulos.
 - Funciona localmente.
 - Só aceita imagens do tipo **.jpg**.
+
+---
+
+## ⏩ Proximos passos
+
+- Aprimorar o código para que receba mais arquivos de imagem além do `.jpg`.
+- Conectar com um banco de dados para o armazenamento das fotos das pessoas conhecidas.
 
 ---
 
