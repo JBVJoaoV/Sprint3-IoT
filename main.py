@@ -108,7 +108,7 @@ while True:
         # Compara este encoding do frame com todos os encodings conhecidos.
         # Retorna uma lista de booleanos: True onde a distância está abaixo do 'tolerance'.
         # tolerance=0.6 é um valor comum (menor = mais rigoroso, maior = mais permissivo).
-        comparacoes = face_recognition.compare_faces(encodings_conhecidos, encoding_rosto, tolerance=0.6)
+        comparacoes = face_recognition.compare_faces(encodings_conhecidos, encoding_rosto, tolerance=2.6)
 
         # Calcula as distâncias (valores numéricos) entre o encoding detectado e cada encoding conhecido.
         # Distâncias menores indicam rostos mais semelhantes.
